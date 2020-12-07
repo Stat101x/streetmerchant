@@ -23,9 +23,7 @@ export function getProductLinksBuilder(options: LinksBuilderOptions) {
 		const links: Link[] = [];
 		for (let i = 0; i < productElements.length; i++) {
 			const productElement = productElements.eq(i);
-			const titleElement = productElement
-				.find(options.titleSelector)
-				.first();
+			const titleElement = productElement.find(options.titleSelector).first();
 
 			const title = options.titleAttribute
 				? titleElement.attr()?.[options.titleAttribute]

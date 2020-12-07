@@ -10,8 +10,7 @@ export const Expert: Store = {
 			}
 		],
 		maxPrice: {
-			container:
-				'.widget-Container-subContent .widget-ArticlePrice-price',
+			container: '.widget-Container-subContent .widget-ArticlePrice-price',
 			euroFormat: false
 		},
 		outOfStock: [
@@ -31,8 +30,7 @@ export const Expert: Store = {
 			brand: 'test:brand',
 			model: 'test:model',
 			series: 'test:series',
-			url:
-				'https://www.expert.de/shop/11364114744-ps4-pro-1tb-jet-black.html'
+			url: 'https://www.expert.de/shop/11364114744-ps4-pro-1tb-jet-black.html'
 		},
 		{
 			brand: 'sony',

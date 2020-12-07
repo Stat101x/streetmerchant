@@ -3,8 +3,7 @@ import {Store} from './store';
 export const Walmart: Store = {
 	labels: {
 		inStock: {
-			container:
-				'.button.spin-button.prod-ProductCTA--primary.button--primary',
+			container: '.button.spin-button.prod-ProductCTA--primary.button--primary',
 			text: ['add to cart']
 		},
 		maxPrice: {

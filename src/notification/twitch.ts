@@ -39,9 +39,7 @@ const chatClient: ChatClient = new ChatClient(
 						{
 							accessToken,
 							expiryTimestamp:
-								expiryDate === null
-									? null
-									: expiryDate.getTime(),
+								expiryDate === null ? null : expiryDate.getTime(),
 							refreshToken
 						},
 						null,
@@ -92,9 +90,7 @@ export function sendTwitchMessage(link: Link, store: Store) {
 		logger.debug('↗ sending twitch message');
 
 		messages.push(
-			`${Print.inStock(link, store)}\n${
-				link.cartUrl ? link.cartUrl : link.url
-			}`
+			`${Print.inStock(link, store)}\n${link.cartUrl ? link.cartUrl : link.url}`
 		);
 
 		if (!alreadySaying) {

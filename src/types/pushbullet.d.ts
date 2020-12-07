@@ -18,10 +18,7 @@ declare module '@jef/pushbullet' {
 	export interface PushBulletStream {
 		connect: () => void;
 		close: () => void;
-		on: ((
-			event: 'connect' | 'close' | 'nop',
-			callback: () => void
-		) => void) &
+		on: ((event: 'connect' | 'close' | 'nop', callback: () => void) => void) &
 			((event: 'error', callback: (error: any) => void) => void) &
 			((event: 'message', callback: (message: any) => void) => void) &
 			((event: 'tickle', callback: (tickle: any) => void) => void) &
@@ -33,10 +30,7 @@ declare module '@jef/pushbullet' {
 		me(callback: PushBulletCallback);
 		devices(options: ListOptions, callback: PushBulletCallback);
 		devices(callback: PushBulletCallback);
-		createDevice(
-			options: Record<string, any>,
-			callback: PushBulletCallback
-		);
+		createDevice(options: Record<string, any>, callback: PushBulletCallback);
 		updateDevice(
 			deviceIden: string,
 			deviceOptions: Record<string, any>,
@@ -71,14 +65,8 @@ declare module '@jef/pushbullet' {
 		subscriptions(callback: PushBulletCallback);
 		subscribe(channelTag: string, callback: PushBulletCallback);
 		unsubscribe(subscriptionIden: string, callback: PushBulletCallback);
-		muteSubscription(
-			subscriptionIden: string,
-			callback: PushBulletCallback
-		);
-		unmuteSubscription(
-			subscriptionIden: string,
-			callback: PushBulletCallback
-		);
+		muteSubscription(subscriptionIden: string, callback: PushBulletCallback);
+		unmuteSubscription(subscriptionIden: string, callback: PushBulletCallback);
 		channelInfo(channelTag: string, callback: PushBulletCallback);
 		chats(options: ListOptions, callback: PushBulletCallback);
 		chats(callback: PushBulletCallback);
@@ -87,10 +75,7 @@ declare module '@jef/pushbullet' {
 		muteChat(chatIden: string, callback: PushBulletCallback);
 		unmuteChat(chatIden: string, callback: PushBulletCallback);
 		sendSMS(options: Record<string, any>, callback: PushBulletCallback);
-		sendClipboard(
-			options: Record<string, any>,
-			callback: PushBulletCallback
-		);
+		sendClipboard(options: Record<string, any>, callback: PushBulletCallback);
 		dismissEphemeral(
 			options: Record<string, any>,
 			callback: PushBulletCallback

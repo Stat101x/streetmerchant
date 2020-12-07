@@ -12,8 +12,7 @@ export const Elcorteingles: Store = {
 		// },
 		inStock: [
 			{
-				container:
-					'.product_detail-purchase.mb-2.c12 .js-add-cart-text',
+				container: '.product_detail-purchase.mb-2.c12 .js-add-cart-text',
 				text: ['a la cesta']
 			}
 		],

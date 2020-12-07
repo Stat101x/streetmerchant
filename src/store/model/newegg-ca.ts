@@ -12,8 +12,7 @@ export const NeweggCa: Store = {
 			text: ['add to cart']
 		},
 		maxPrice: {
-			container:
-				'div#app div.product-price > ul > li.price-current > strong',
+			container: 'div#app div.product-price > ul > li.price-current > strong',
 			euroFormat: false
 		}
 	},

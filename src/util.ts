@@ -6,9 +6,7 @@ import {logger} from './logger';
 
 export function getSleepTime(store: Store) {
 	const minSleep = store.minPageSleep as number;
-	return (
-		minSleep + Math.random() * ((store.maxPageSleep as number) - minSleep)
-	);
+	return minSleep + Math.random() * ((store.maxPageSleep as number) - minSleep);
 }
 
 export async function delay(ms: number) {

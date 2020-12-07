@@ -26,9 +26,7 @@ export const AmazonNl: Store = {
 			},
 			{
 				container: '#outOfStock',
-				text: [
-					'we weten niet of en wanneer dit item weer op voorraad is'
-				]
+				text: ['we weten niet of en wanneer dit item weer op voorraad is']
 			}
 		]
 	},
